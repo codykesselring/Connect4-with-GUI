@@ -60,42 +60,6 @@ public class MainGame {
         connect4GUI.startGame(symbols, board, playerNames);
 
         board.initBoard();
-
-        /*
-        boolean won = false;
-        boolean draw = false;
-        int currentPlayer = 0;
-        
-        while (!won && !draw) {
-            boolean work = false;
-            
-            do {
-                board.printBoard();
-                System.out.println("Which column would you like to choose?");
-                int move = scanner.nextInt();
-                if (move >= 0 && move <= 6) {
-                    work = board.makeMove(move, symbols[currentPlayer]);
-                } else {
-                    System.out.println("Invalid move. Please try again.");
-                }
-            }
-            while (!work);
-            won = board.checkWin();
-            draw = board.checkDraw();
-            currentPlayer = (currentPlayer + 1) % 2;
-        }
-        board.printBoard();
-        if (won) {
-            System.out.println("Congratulations Player " + symbols[currentPlayer] + ", you're better than Player: " + symbols[(currentPlayer + 1) % 2]);
-        } else {
-            System.out.println("Better luck next time!");
-        }
-        scanner.close();
-        return;
-        */
-
-
     }
-
 
 }
